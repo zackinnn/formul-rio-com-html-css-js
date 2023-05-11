@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+<head> 
+    <link href="estilo.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário EasyBeach</title> 
+</head>
+<body>
+    <h1>Obrigado pelo seu tempo!</h1>
+    <h2>Seu feedback foi de grande ajuda!</h2>
+    <hr>
+    <h2>
+        <button id="r10" type="submit" onclick="verificarCampos()">Enviar</button>
+
+</h2>
+    
+    
+    
+    
+    
+ <p id="redes"><a href ="https://www.instagram.com/zackinnn.xz/" target="_blank"><img id="insta"
+         width="30px"src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png"></a></p>
+<p id="redesgit"><a href="https://github.com/zackinnn" target="_blank"><img id="github" width="30px" src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png"></a></p>
+</body>
+<script>
+  function verificarCampos() {
+  
+    var resposta = confirm("Você gostaria de me seguir nas redes sociais?");
+
+    if (resposta) {
+    
+      window.location.href = "https://www.instagram.com/zackinnn.xz/";
+    } else {
+    
+      alert("OK, Obrigado Mesmo assim :)");
+
+      // verificar se algum campo está vazio
+      var camposVazios = [];
+      var inputs = document.getElementsByTagName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].value === "") {
+          camposVazios.push(inputs[i].name);
+        }
+      }
+
+    
+      if (camposVazios.length > 0) {
+        alert("Faltam preencher os campos: " + camposVazios.join(", "));
+      } else {
+       
+        var confirmacao = confirm("Muito obrigado por entrar nesse projeto teste!");
+
+        if (confirmacao) {
+          
+          document.getElementsByTagName("form")[0].target = "_blank";
+          document.getElementsByTagName("form")[0].submit();
+          window.close();
+            return;
+        }
+      }
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+</html>

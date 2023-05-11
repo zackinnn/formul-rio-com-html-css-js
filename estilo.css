@@ -1,0 +1,77 @@
+<style>
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(to left,#323332,#515751);
+}
+h1 {
+  color: #1e90ff;
+  text-align: center;
+}
+h2 {
+  color: #000;
+  text-align: center;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  
+}
+#r10{
+  background-color: #1e90ff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#insta {
+  display: block;
+  margin: 0 auto;
+
+}
+
+#ifrj{
+    display: block;
+    margin: 0 auto;
+}
+#redes2{
+    text-align: left;
+    margin-top: 30px;
+}
+#Portal2{
+    display:block;
+    margin: 0px 0px 0px 25px;
+}
+#Portal2princi{
+  display: block;
+  margin: 0 auto;
+}
+#redesprinci{
+    display: block;
+    text-align: center;}
+#r9{
+  background-color: darkred;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#social{
+    background-color:#0000
+        
+}
+#github{
+  display: block;
+  margin: 0 auto;
+}
+  
+
+</style>
